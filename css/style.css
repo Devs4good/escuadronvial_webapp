@@ -1,0 +1,60 @@
+/* estilos de home */
+@font-face {
+    font-family: 'fredoka_oneregular';
+    src: url('fredokaone-regular-webfont.woff2') format('woff2'),
+         url('fredokaone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('roboto-regular-webfont.woff2') format('woff2'),
+         url('roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5}
+
+
+.leyenda{margin-top:130px; font-size: 35px;
+    line-height: 50px;
+    color: #175965;
+    font-weight: 400;
+    text-align: center;}
+
+.botonera{margin-top: 150px; width: 100%; background-color: #f5f5f5}
+
+.botonera .boton-home{
+    display: block;
+    margin: 5px 60px;
+    padding: 10px 20px;
+}
+
+
+.botonera .boton-jugar{width: 270px;
+    color: #ffffff;
+    font-weight: 400;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 3px 9px rgba(97,191,216,0.2);
+    background-color: #0093ba;}
+
+.botonera .boton-sesion{width: 270px;
+    color: #0093ba;
+    font-weight: 400;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 3px 9px rgba(97,191,216,0.2);
+    background-color: #ffffff;
+    border: 2px solid #0093ba;
+}
+
+.botonera .sugerencias{
+    font-size: 14px;
+    color: #0093ba;
+    font-family: "Roboto";
+    font-weight: 700;
+    text-align: center;
+}
