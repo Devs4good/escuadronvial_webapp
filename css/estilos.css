@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'fredoka_oneregular';
+    src: url('fredokaone-regular-webfont.woff2') format('woff2'),
+         url('fredokaone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('roboto-regular-webfont.woff2') format('woff2'),
+         url('roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
 	margin: 0;
 }
@@ -55,4 +71,18 @@ body{
 	display: block;
 	margin: auto;
 	text-align: center; 
+}
+
+.container-ranking{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top:51px;
+	padding-bottom:16px;
+	background-color: #f5f5f5;
+}
+
+.text-header{
+	font-size: 20px;
+	color: #175965;
+	font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif
 }
