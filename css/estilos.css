@@ -84,5 +84,65 @@ body{
 .text-header{
 	font-size: 20px;
 	color: #175965;
-	font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif
+	font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.best-score{
+	margin-top: 34px;
+	background-color: rgba(253,162,42,.49);
+	border-radius: 25px;
+	width: 135px;
+	height: 50px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.best-score span{
+	font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 18px;
+	color: #707070;
+}
+
+.ranking{
+	margin-top: 33px;
+}
+
+.ranking table th {
+	font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	width:124px;
+	color: #707070;
+}
+
+.text-info {
+	margin-top: 26px;
+	text-align: center;
+}
+
+.text-info span {
+	font-size: 16px;
+	margin-top: 14px;
+	cursor: pointer;
+	color: #0093ba;
+	font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-info span.bold {
+	font-weight: 700;
+}
+
+.text-info button{
+	cursor: pointer;
+	margin-top:26px;
+	margin-bottom: 26px;
+	background-color: #0093ba;
+	font-size: 16px;
+	color: #ffffff;
+	border-radius: 25px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, .2);
+	width: 270px;
+	height: 50px;
+	overflow: hidden;
+	font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
 }
