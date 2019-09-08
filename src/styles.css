@@ -13,16 +13,16 @@
     font-style: normal;
 }
 
-body{font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5}
+body{font-family: "Fredoka One"; background-color: #f5f5f5}
 
 
-.leyenda{margin-top:130px; font-size: 35px;
+.leyenda{margin-top:10px; font-size: 35px; margin-bottom: -122px;
     line-height: 50px;
-    color: #175965;
+    color: white	;
     font-weight: 400;
     text-align: center;}
 
-.botonera{margin-top: 150px; width: 100%; background-color: #f5f5f5}
+.botonera{margin-top: 150px; width: 100%; }
 
 .botonera .boton-home{
     display: block;
@@ -32,27 +32,27 @@ body{font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif; 
 
 
 .botonera .boton-jugar{width: 270px;
-    color: #ffffff;
+    color: white;
     font-weight: 400;
     height: 50px;
     border-radius: 25px;
     box-shadow: 0px 3px 9px rgba(97,191,216,0.2);
-    background-color: #0093ba;}
+    background-color: #faa400;}
 
-.botonera .boton-sesion{width: 270px;
-    color: #0093ba;
-    font-weight: 400;
-    height: 50px;
-    border-radius: 25px;
-    box-shadow: 0px 3px 9px rgba(97,191,216,0.2);
-    background-color: #ffffff;
-    border: 2px solid #0093ba;
+.botonera .boton-sesion{
+	border-radius: 24px;
+	border: 1px solid #f5f5f5;
+	box-shadow: inset 0 3px 8px rgba(0, 0, 0, .2);
+	width: 268px;
+	height: 48px;
+	overflow: hidden;
+	color: white;
 }
 
 .botonera .sugerencias{
     font-size: 14px;
     color: #0093ba;
-    font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Roboto";
     font-weight: 700;
     text-align: center;
 }
@@ -69,7 +69,7 @@ body{font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif; 
 
 .button{
     background: #0093BA;
-    font-family: 'Fredoka One', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Fredoka One", Tahoma, Geneva, Verdana, sans-serif;
     color: #FFFFFF;
     padding: 15px;
     text-align: center;
@@ -84,7 +84,7 @@ body{font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif; 
 h1.title{
 	font-size: 24px;
 	color: #175965;
-    font-family: 'Fredoka One', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Fredoka One", Tahoma, Geneva, Verdana, sans-serif;
     display: block;
     text-align: center;
     margin: 10px;
@@ -114,7 +114,7 @@ h1.title{
 .txt-pregunta{
     font-size: 18px;
     color: #175965;
-    font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Fredoka One";
     font-weight: 400;
     position: relative;
     bottom: 24vh;
@@ -138,7 +138,7 @@ h1.title{
     border: 1px solid #1e92be;
     font-size: 16px;
     color: #1e92be;
-    font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Roboto";
     font-weight: 400;
 }
 
@@ -151,7 +151,7 @@ h1.title{
     font-size: 24px;
     padding-left: 98px;
     color: #175965;
-    font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;;
+    font-family: "Fredoka One";;
 }
 
 .descripcion {
@@ -182,7 +182,7 @@ h1.title{
     color: #ffffff;
     text-align: center;
     padding-top: 14px;
-    font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Fredoka One";
 }
 
 body{
@@ -251,12 +251,12 @@ body{
 	padding-bottom:16px;
 	background-color: #fda22a;
 	color: white;
-	font-family: 'Fredoka One';
+	font-family: "Fredoka One";
 }
 
 .text-header{
 	font-size: 20px;
-	font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "Fredoka One";
 }
 
 .ranking{
@@ -264,7 +264,7 @@ body{
 }
 
 .ranking table th {
-	font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "Roboto";
 	font-size: 16px;
 	font-weight: 700;
 	width:124px;
@@ -272,7 +272,7 @@ body{
 }
 
 .ranking table tr td {
-	font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "Roboto";
 	width: 320px;
 	height: 49px;
 	font-size: 16px;
@@ -290,7 +290,7 @@ body{
 	margin-top: 14px;
 	color: #ffffff;
 	cursor: pointer;
-	font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "Roboto";
 }
 
 .text-info span.bold {
@@ -311,7 +311,7 @@ body{
 	width: 270px;
 	height: 50px;
 	overflow: hidden;
-	font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "Fredoka One";
 }
 
 .container-image {
@@ -339,7 +339,7 @@ body{
 }
 
 .respuesta-info {
-	font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "Fredoka One";
 	font-size: 20px;
 	color: #175965;
 	margin-bottom:61px;
@@ -348,7 +348,7 @@ body{
 .respuesta {
 	font-size: 16px;
 	color: #1e92be;
-	font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "Roboto";
 	width: 204px;
 	height: 42px;
 }
@@ -357,14 +357,14 @@ body{
 	margin-top: 20px;
 	font-size: 16px;
 	color: #fda22a;
-	font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "Fredoka One";
 }
 
 .button-bottom-right {
 	font-size: 16px;
 	font-weight: 700;
 	color: #0093ba;
-	font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "Roboto";
 	padding-left:246px;
 	padding-top:80%;
 }
@@ -376,11 +376,37 @@ body{
 	width: 315px;
 	height: 35px;
 	overflow: hidden;
-	font-family: 'Fredoka One';
+	font-family: "Fredoka One";
 }
 
 .ranking table { 
     border-collapse: separate; 
     border-spacing: 0 10px; 
     margin-top: -10px; /* correct offset on first border spacing if desired */
+}
+
+.header {
+	font-size: 16px;
+	color: #34ab56;
+	margin-left: 42px;
+	margin-top:17px;
+	font-family: "Fredoka One";
+}
+
+.header span {
+	font-size: 16px;
+	color: #34ab56;
+	margin-left: 42px;
+	font-family: "Fredoka One";
+	margin-left: 220px;
+}
+
+.container-home {
+	background-color: #3690c8;
+	color: white;
+}
+
+.container-img {
+	padding-top: 45px;
+	text-align: center;
 }

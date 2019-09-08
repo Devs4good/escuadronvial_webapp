@@ -7,11 +7,11 @@
 </div>
 
 <div class="respuestas-container">
-    <span class="respuesta-info">Respuesta correcta / Contestaste mal</span> <br>
+    <span class="respuesta-info"> {{correcta? 'Bien ahí' : 'Mmm... No'}}</span> <br>
     <span class="respuesta">{{respuesta}}</span> <br>
     <span class="mas-info">Mas información</span>
 </div>
 
 <div class="button-bottom-right" id="boton-continuar" (click)="continuar()"> 
-    Continuar
+    Siguiente pregunta
 </div>
