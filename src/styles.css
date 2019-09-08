@@ -1,0 +1,386 @@
+@font-face {
+    font-family: 'fredoka_oneregular';
+    src: url('assets/fonts/fredokaone-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/fredokaone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5}
+
+
+.leyenda{margin-top:130px; font-size: 35px;
+    line-height: 50px;
+    color: #175965;
+    font-weight: 400;
+    text-align: center;}
+
+.botonera{margin-top: 150px; width: 100%; background-color: #f5f5f5}
+
+.botonera .boton-home{
+    display: block;
+    margin: 5px 60px;
+    padding: 10px 20px;
+}
+
+
+.botonera .boton-jugar{width: 270px;
+    color: #ffffff;
+    font-weight: 400;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 3px 9px rgba(97,191,216,0.2);
+    background-color: #0093ba;}
+
+.botonera .boton-sesion{width: 270px;
+    color: #0093ba;
+    font-weight: 400;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 3px 9px rgba(97,191,216,0.2);
+    background-color: #ffffff;
+    border: 2px solid #0093ba;
+}
+
+.botonera .sugerencias{
+    font-size: 14px;
+    color: #0093ba;
+    font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+.card-wrapper{
+    font-size: 24px;
+    color: #0093ba;
+    font-family: "Roboto";
+    font-weight: 700;
+    text-align: center;
+}
+
+.button{
+    background: #0093BA;
+    font-family: 'Fredoka One', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+    padding: 15px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 270px;
+    margin: auto;
+    display: block;
+}   
+
+h1.title{
+	font-size: 24px;
+	color: #175965;
+    font-family: 'Fredoka One', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    margin-top: 65px;
+    font-weight: bolder;
+}
+
+.category-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-item{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #39B600;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+
+/*estilos de pregunta.html*/
+
+.txt-pregunta{
+    font-size: 18px;
+    color: #175965;
+    font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    position: relative;
+    bottom: 24vh;
+}
+
+.container .span-correcto{
+    position: relative;
+    bottom: 15vh;
+}
+
+.opciones{
+    position: relative;
+    bottom: 10vh;
+}
+
+
+.opciones button{
+    width: 273px;
+    height: 57px;
+    border-radius: 6px;
+    border: 1px solid #1e92be;
+    font-size: 16px;
+    color: #1e92be;
+    font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.container-sugerencias {
+    padding-left: 19px;
+    padding-top: 62px;
+}
+
+.titulo {
+    font-size: 24px;
+    padding-left: 98px;
+    color: #175965;
+    font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;;
+}
+
+.descripcion {
+    margin-top:30px;
+    color: #175965;
+    text-align: center;
+}
+
+.inputs {
+    margin-top: 105px;
+}
+
+.inputs input{
+    margin-bottom: 20px;
+    width:90%;
+}
+
+.btn-enviar {
+    margin-top: 110px;
+    background-color: #0093ba;
+    border-radius: 25px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .2);
+    width: 270px;
+    height: 50px;
+    overflow: hidden;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 14px;
+    font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+	margin: 0;
+}
+
+.contenedor-loader{
+	background: #E7ED7A;
+}
+.preloader{
+	margin: auto;
+	width: 350px;
+	height: 50px;
+	background: rgba(255, 255, 255, 0.1);
+	position: absolute;
+	left: 0;
+	right: 0px;
+	bottom: 0px;
+}
+
+.preloader:before {
+	content: "";
+	position: absolute;
+	background: green;
+	width: 0;
+	height: 30px;
+
+	animation: preloader 5s infinite;
+}
+
+.preloader p{
+	margin: 0;
+	line-height: 30px;
+	font-size: 25px;
+	font-weight: bold;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@keyframes preloader {
+	90%{
+		width: 100%;
+		opacity: 1;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+.logica{
+	transform: translateY(-100%);
+	transition: all 0.5s;
+}
+
+.imagen{
+	display: block;
+	margin: auto;
+	text-align: center; 
+}
+
+.container-ranking{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top:51px;
+	padding-bottom:16px;
+	background-color: #f5f5f5;
+}
+
+.text-header{
+	font-size: 20px;
+	color: #175965;
+	font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.best-score{
+    display: block;
+    padding: 10px 20px;
+	margin-top: 34px;
+	background-color: rgba(253,162,42,.49);
+	border-radius: 25px;
+	width: 135px;
+	height: 50px;
+	overflow: hidden;
+	text-align: center;
+	font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 18px;
+	color: #707070;
+	border: none;
+}
+
+.ranking{
+	margin-top: 33px;
+}
+
+.ranking table th {
+	font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	width:124px;
+	color: #707070;
+	text-align: center;
+}
+
+.ranking table tr td {
+	font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	width: 320px;
+	height: 49px;
+	font-size: 16px;
+	text-align: center;
+}
+
+
+.text-info {
+	margin-top: 26px;
+	text-align: center;
+}
+
+.text-info span {
+	font-size: 16px;
+	margin-top: 14px;
+	cursor: pointer;
+	color: #0093ba;
+	font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-info span.bold {
+	font-weight: 700;
+}
+
+.text-info div{
+	margin: auto;
+    display: block;
+    padding: 10px 20px;
+	cursor: pointer;
+	margin-top:26px;
+	background-color: #0093ba;
+	font-size: 16px;
+	color: #ffffff;
+	border-radius: 25px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, .2);
+	width: 270px;
+	height: 50px;
+	overflow: hidden;
+	font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-image {
+	padding-top: 46px;
+	padding-left: 113px;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 52px;
+	height: 52px;
+	overflow: hidden;
+	margin-left:42px;
+	margin-top: -20px;
+	font-size: 31px;
+	color: #ffffff;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.respuestas-container {
+	margin-top: 38px;
+	text-align: center;
+}
+
+.respuesta-info {
+	font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 20px;
+	color: #175965;
+	margin-bottom:61px;
+}
+
+.respuesta {
+	font-size: 16px;
+	color: #1e92be;
+	font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	width: 204px;
+	height: 42px;
+}
+
+.mas-info {
+	margin-top: 20px;
+	font-size: 16px;
+	color: #fda22a;
+	font-family: 'fredoka_oneregular UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button-bottom-right {
+	font-size: 16px;
+	font-weight: 700;
+	color: #0093ba;
+	font-family: 'robotoregular UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding-left:246px;
+	padding-top:80%;
+}

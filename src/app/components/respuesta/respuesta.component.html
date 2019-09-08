@@ -1,0 +1,17 @@
+<div class="container-image">
+    <img [src]='imageSrc' width="135px">
+    <div class="circle"
+         [ngStyle]="{'background-color': correcta ? '#26b526' : '#D90000'}">
+        <span>{{correcta? '✓' : '✗'}}</span>
+    </div>
+</div>
+
+<div class="respuestas-container">
+    <span class="respuesta-info">Respuesta correcta / Contestaste mal</span> <br>
+    <span class="respuesta">{{respuesta}}</span> <br>
+    <span class="mas-info">Mas información</span>
+</div>
+
+<div class="button-bottom-right" id="boton-continuar"> 
+    Continuar
+</div>
