@@ -16,6 +16,8 @@ export class RankingComponent implements OnInit {
     {posicion: 422, nombre: "Nombre 2", puntaje: 1212}
   ]
 
+  public primero = {nombre: "Foxy", puntaje: 123123}
+
   ngOnInit() {
   }
 

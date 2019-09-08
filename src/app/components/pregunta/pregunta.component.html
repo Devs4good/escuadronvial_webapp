@@ -1,12 +1,12 @@
 <div class="container" *ngIf="!respondido">
   <div class="pregunta mt-2">
       <img src="../../../assets/images/pregunta.png" class="img-fluid" alt="">
-      <p class="txt-pregunta text-center" id="pregunta">{{pregunta}}</p>
+      <p class="txt-pregunta text-center" id="pregunta">{{preguntaActual?.pregunta}}</p>
   </div>
   <span class="text-muted span-correcto">Selecciona la correcta</span>
 
   <div class="opciones text-center">
-      <div *ngFor="let respuesta of respuestas">
+      <div *ngFor="let respuesta of preguntaActual?.respuestas">
           <button class="boton-opcion mb-3" id="boton-respuesta" (click)="procesarRespuesta(respuesta)">{{respuesta.respuesta}}</button>
       </div>
   </div>
@@ -14,6 +14,7 @@
 
 <div *ngIf="respondido">
   <app-respuesta [correcta]="respuestaSeleccionada.correcta"
-                 [respuesta]="respuestaSeleccionada.respuesta">
+                 [respuesta]="respuestaSeleccionada.respuesta"
+                 (onContinuar)="pasarASiguiente()">
   </app-respuesta>
 </div>
