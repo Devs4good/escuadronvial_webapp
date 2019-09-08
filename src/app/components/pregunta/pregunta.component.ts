@@ -26,7 +26,7 @@ export class PreguntaComponent implements OnInit {
   ngOnInit() {
     this.preguntasService.getPreguntas().subscribe(data => {
       this.preguntas = data as Pregunta[];
-      this.preguntas = this.preguntas.filter(x => x.pregunta.valueOf.toString().length < 49);
+      this.preguntas = this.preguntas.filter(x => x.pregunta.valueOf.toString().length < 40);
       console.log(this.preguntas);
       this.preguntaActual = this.preguntas[this.indiceActual];
 
