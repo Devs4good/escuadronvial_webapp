@@ -21,7 +21,7 @@
 
 <div *ngIf="respondido">
   <app-respuesta [correcta]="respuestaSeleccionada.correcta"
-                 [respuesta]="respuestaSeleccionada.respuesta"
+                 [respuesta]="respuestaCorrectaActual"
                  (onContinuar)="pasarASiguiente()">
   </app-respuesta>
 </div>

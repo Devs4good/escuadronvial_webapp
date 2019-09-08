@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Respuesta } from 'src/model/respuesta';
 import {Router} from '@angular/router';
+import { PreguntasService } from 'src/app/services/preguntas.service';
+import { Pregunta } from 'src/model/pregunta';
 
 @Component({
   selector: 'app-pregunta',
@@ -11,27 +13,34 @@ export class PreguntaComponent implements OnInit {
   
   public respuestaSeleccionada = new Respuesta();
   
-  constructor(private router: Router) { }
-  public preguntas = [
-    {id : 1, pregunta: '¿Para que sirve el airbag?', respuestas: [
-    {id: 1, respuesta: "Para inflar un globo", correcta: false},
-    {id: 2, respuesta: "Para que no se rompa el parabrisas", correcta: false},
-    {id: 3, respuesta: "Para prevenir golpes fuertes en un accidente", correcta: true},
-    {id: 4, respuesta: "No tiene ninguna utilidad", correcta: false}
-  ]},
-    {id: 2, pregunta: '¿Otra pregunta?', respuestas: [
-      {id: 1, respuesta: "Para inflar un globo", correcta: false},
-      {id: 2, respuesta: "Para que no se rompa el parabrisas", correcta: false},
-      {id: 3, respuesta: "Para prevenir golpes fuertes en un accidente", correcta: true},
-      {id: 4, respuesta: "No tiene ninguna utilidad", correcta: false}
-    ]}];
+  constructor(private router: Router,
+              private preguntasService: PreguntasService) { }
+  public preguntas : Pregunta[];
   public respondido = false;
-  public preguntaActual;
+  public preguntaActual: Pregunta;
   public indiceActual = 0;
   public puntaje = 0;
+  public respuestas: Respuesta[];
+  public respuestaCorrectaActual: string;
 
   ngOnInit() {
-    this.preguntaActual = this.preguntas[this.indiceActual];
+    this.preguntasService.getPreguntas().subscribe(data => {
+      this.preguntas = data as Pregunta[];
+      this.preguntas = this.preguntas.filter(x => x.pregunta.valueOf.toString().length < 49);
+      console.log(this.preguntas);
+      this.preguntaActual = this.preguntas[this.indiceActual];
+
+      this.preguntasService.getRespuestas().subscribe(data => {
+        this.respuestas = data as Respuesta[];
+        this.getRespuestasDePreguntaActual();
+      })
+    });
+  }
+
+  getRespuestasDePreguntaActual(){
+    this.preguntaActual.respuestas = 
+          this.respuestas.filter(x => x.pregunta == 'https://rocky-ocean-09170.herokuapp.com/preguntas/' + this.preguntaActual.id + '/');
+      console.log(this.preguntaActual);
   }
 
   procesarRespuesta(resp){
@@ -41,7 +50,7 @@ export class PreguntaComponent implements OnInit {
     } else {
       this.puntaje-=5;
     }
-    console.log(this.puntaje);
+    this.respuestaCorrectaActual = this.preguntaActual.respuestas.find(x => x.correcta).respuesta;
     this.respondido = true;
   }
 
@@ -52,8 +61,8 @@ export class PreguntaComponent implements OnInit {
     if (this.indiceActual == this.preguntas.length){
       this.router.navigateByUrl("/ranking");
     }
-
     this.preguntaActual = this.preguntas[this.indiceActual];
+    this.getRespuestasDePreguntaActual();
   }
 
 }
