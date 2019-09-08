@@ -4,12 +4,12 @@
 
 <div class="category-list">
 
-    <div class="category-item">
-        <i class="fas fa-carrot"></i>
+    <div class="category-item" *ngFor="let categoria of categorias; index as i">
+        <a href="url(assets/img/categorias/' + categoria.nombre +'_cate'+ '.svg)">{{categoria.nombre}}</a>
     </div>
 
 </div>
 
-<button class="button" id="jugar" href="/pregunta">
+<button class="button" id="jugar" (click)="jugar()">
     Jugar
 </button>
