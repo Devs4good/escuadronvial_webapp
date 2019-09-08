@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-ranking',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RankingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   public puntajes = [
     {posicion: 420, nombre: "Nombre 2", puntaje: 1212},
@@ -18,4 +19,7 @@ export class RankingComponent implements OnInit {
   ngOnInit() {
   }
 
+  goPregunta(){
+    this.router.navigateByUrl('/pregunta');
+  }
 }
