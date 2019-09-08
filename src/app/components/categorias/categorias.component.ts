@@ -16,8 +16,10 @@ export class CategoriasComponent implements OnInit {
     private categoriaService: CategoriasService) { }
 
   ngOnInit() {
-    this.categoriaService.getCategorias().subscribe(() => {
-
+    this.categoriaService.getCategorias().subscribe((data) => {
+      this.categorias = data;
+      console.log(this.categorias);
+      this.categorias = this.categorias.filter(x => x.nombre != "Otros" && x.nombre != "Aleatorio");
     }); 
   }
 

@@ -15,7 +15,7 @@ export class CategoriasService {
    }
 
   getCategorias() : Observable<any>{
-    let resp = this.http.get("https://rocky-ocean-09170.herokuapp.com/categorias/")
+    let resp = this.http.get("https://rocky-ocean-09170.herokuapp.com/categorias/");
     return resp;
   }
 }
