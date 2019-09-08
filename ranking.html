@@ -10,10 +10,10 @@
 </head>
 <body>
         <div class="container-ranking">
-                <span class="text-header">Ranking</span>
+                <span class="text-header" id="titulo">Ranking</span>
             
                 <div class="best-score">
-                    <span>#1 349878</span>
+                    #1 349878
                 </div>
             
                 <div class="ranking">
@@ -21,13 +21,31 @@
                         <th>Posición</th>
                         <th>Nombre</th>
                         <th>Puntaje</th>
+
+                        <tr style="color: #707070;">
+                            <td>450</td>
+                            <td>Nombre 2</td>
+                            <td>3498</td>
+                        </tr>
+                        
+                        <tr style="color:#0093ba; font-weight:700;">
+                            <td>450</td>
+                            <td>Nombre 2</td>
+                            <td>3498</td>
+                        </tr>
+                            
+                        <tr style="color: #707070;">
+                            <td>450</td>
+                            <td>Nombre 2</td>
+                            <td>3498</td>
+                        </tr>
                     </table>
                 </div>
                 
                 <div class="text-info">
-                    <span class="bold">Mis respuestas</span> <br>
-                    <button class="button"> Volver a jugar</button> <br>
-                    <span>Sugerencias</span> <br>
+                    <span id="respuestas" class="bold">Mis respuestas</span> <br>
+                    <div class="button" id="boton-siguiente"> Volver a jugar</div> <br>
+                    <span id="sugerencia">Sugerencias</span> <br>
                 </div>
             </div>
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

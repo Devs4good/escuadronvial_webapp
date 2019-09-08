@@ -124,4 +124,37 @@ h1.title{
     width: 270px;
     margin: auto;
     display: block;
+}   
+
+/*estilos de pregunta.html*/
+
+.txt-pregunta{
+    font-size: 18px;
+    color: #175965;
+    font-family: "Fredoka One";
+    font-weight: 400;
+    position: relative;
+    bottom: 24vh;
+}
+
+.container .span-correcto{
+    position: relative;
+    bottom: 15vh;
+}
+
+.opciones{
+    position: relative;
+    bottom: 10vh;
+}
+
+
+.opciones button{
+    width: 273px;
+    height: 57px;
+    border-radius: 6px;
+    border: 1px solid #1e92be;
+    font-size: 16px;
+    color: #1e92be;
+    font-family: "Roboto";
+    font-weight: 400;
 }
