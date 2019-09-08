@@ -10,6 +10,7 @@ import { RankingComponent } from './components/ranking/ranking.component';
 import { RespuestaComponent } from './components/respuesta/respuesta.component';
 import { CategoriasComponent } from './components/categorias/categorias.component';
 import { EmpezarComponent } from './components/empezar/empezar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EmpezarComponent } from './components/empezar/empezar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

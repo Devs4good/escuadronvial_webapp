@@ -1,0 +1,17 @@
+.button-empezar {
+    background-color: #fda22a;
+border-radius: 25px;
+box-shadow: 0 3px 8px rgba(0, 0, 0, .2);
+width: 270px;
+height: 50px;
+overflow: hidden;
+}
+
+.input {
+    border: 0  2px #61bfd8;
+}
+
+.titulo {
+    font-size: 24px;
+    color: #175965;
+}
