@@ -59,7 +59,7 @@ export class PreguntaComponent implements OnInit {
     this.indiceActual++;
 
     if (this.indiceActual == this.preguntas.length){
-      this.router.navigateByUrl("/ranking");
+      this.router.navigateByUrl("/felicitaciones/"+ this.puntaje);
     }
     this.preguntaActual = this.preguntas[this.indiceActual];
     this.getRespuestasDePreguntaActual();

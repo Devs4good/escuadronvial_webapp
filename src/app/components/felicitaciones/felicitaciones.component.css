@@ -1,0 +1,28 @@
+.felicitaciones-bg {
+    background-color: #2c91c3;
+    background-size: 150px;
+    width: 361px;
+    height: 641px;
+    color: #ffffff !important;
+}
+
+.titulo-exito {
+    padding-top: 60%; 
+    font-size: 35px;
+    color: #ffffff !important;
+}
+
+.globos {
+      margin-top: 20px; 
+      background: url('/assets/images/baloons.png')  no-repeat #2c91c3;
+      background-size: 350px;
+      background-position-y: 3rem;
+}
+.button-empezar {
+    background-color: #fda22a;
+border-radius: 25px;
+box-shadow: 0 3px 8px rgba(0, 0, 0, .2);
+width: 270px;
+height: 50px;
+overflow: hidden;
+}
