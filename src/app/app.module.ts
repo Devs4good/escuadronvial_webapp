@@ -13,6 +13,7 @@ import { CategoriasComponent } from './components/categorias/categorias.componen
 import { EmpezarComponent } from './components/empezar/empezar.component';
 import { FormsModule } from '@angular/forms';
 import { FelicitacionesComponent } from './components/felicitaciones/felicitaciones.component';
+import { MasinformacionComponent } from './components/masinformacion/masinformacion.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FelicitacionesComponent } from './components/felicitaciones/felicitacio
     RespuestaComponent,
     CategoriasComponent,
     EmpezarComponent,
-    FelicitacionesComponent
+    FelicitacionesComponent,
+    MasinformacionComponent
   ],
   imports: [
     BrowserModule,

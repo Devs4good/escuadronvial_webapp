@@ -12,12 +12,25 @@
     color: #ffffff !important;
 }
 
+.titulo-fallo {
+    padding-top: 60%; 
+    font-size: 28px;
+    color: #ffffff !important;
+}
+
 .globos {
       margin-top: 20px; 
       background: url('/assets/images/baloons.png')  no-repeat #2c91c3;
       background-size: 350px;
       background-position-y: 3rem;
 }
+.fallo {
+    margin-top: 20px; 
+    background: url('/assets/images/logoedu.png')  no-repeat #2c91c3;
+    background-size: 350px;
+    background-position-y: 3rem;
+}
+
 .button-empezar {
     background-color: #fda22a;
 border-radius: 25px;

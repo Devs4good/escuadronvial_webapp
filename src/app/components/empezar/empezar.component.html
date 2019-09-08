@@ -6,13 +6,16 @@
       <span></span> 
   </div>
   <form #f="ngForm" (ngSubmit)="llenarDatos(f)" novalidate>
-    <div class="inputs">
+    <div class="inputs" style="margin-bottom: 5rem">
         <input name="nombre" ngModel required minlength="2" maxlength="30" #nombre="ngModel" placeholder="Nombre" class="form-control">
         <input name="edad" type="number" ngModel required maxlength="3" #edad="ngModel"  class="form-control" placeholder="Edad">
+        <div *ngIf="error" class="alert alert-danger">
+           Debe indicar su nombre y edad.
+        </div>
 <div *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)"
     class="alert alert-danger">
   <div *ngIf="nombre.errors.required">
-    Debe indicar un nombre
+    Debe indicar un nombre.
   </div>
   <div *ngIf="nombre.errors.minlength">
     el nombre debe tener al menos 2 caracteres
@@ -28,14 +31,9 @@
   </div>
 </div>
     </div>
-
-    <br/>
-    <div>
         <button class="button button-empezar" id="boton-siguiente">
             Empezar a Jugar
           </button>
-    </div>
-   
   </form>
  
 </div>

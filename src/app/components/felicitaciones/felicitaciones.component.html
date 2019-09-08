@@ -1,11 +1,12 @@
 <div class="felicitaciones-bg">
   <div class="text-center">
      <div class="globos">
-        <h1 class="titulo-exito">¡Felicitaciones!</h1>
+        <h1 class="titulo-exito" *ngIf="puntaje > 0;">¡Felicitaciones!</h1>
+        <h1 #fallo class="titulo-exito" *ngIf="puntaje < 0">Mejor suerte la próxima!</h1>
      </div>
       <div class="tex-center">
-         <p>Finalizaste el nivel y <br>Llegaste a la posicion</p> 
-         <h1>#{{puntaje}}</h1>
+         <p>Finalizaste el nivel <br>Puntaje</p> 
+         <h1>{{puntaje}}</h1>
       </div>
       <div style="margin-top: 10rem">
           <button [routerLink]="['/ranking']" class="button button-empezar" id="boton-empezar">
