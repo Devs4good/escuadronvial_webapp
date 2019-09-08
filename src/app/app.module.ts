@@ -9,6 +9,7 @@ import { ReporteComponent } from './components/reporte/reporte.component';
 import { RankingComponent } from './components/ranking/ranking.component';
 import { RespuestaComponent } from './components/respuesta/respuesta.component';
 import { CategoriasComponent } from './components/categorias/categorias.component';
+import { EmpezarComponent } from './components/empezar/empezar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CategoriasComponent } from './components/categorias/categorias.componen
     ReporteComponent,
     RankingComponent,
     RespuestaComponent,
-    CategoriasComponent
+    CategoriasComponent,
+    EmpezarComponent
   ],
   imports: [
     BrowserModule,

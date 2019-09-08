@@ -6,6 +6,7 @@ import { RankingComponent } from './components/ranking/ranking.component';
 import { ReporteComponent } from './components/reporte/reporte.component';
 import { RespuestaComponent } from './components/respuesta/respuesta.component';
 import { CategoriasComponent } from './components/categorias/categorias.component';
+import { EmpezarComponent } from './components/empezar/empezar.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'reporte', component: ReporteComponent },
   { path: 'respuesta', component: RespuestaComponent },
   { path: 'categorias', component: CategoriasComponent },
+  { path: 'empezar', component: EmpezarComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },];
 
 @NgModule({
