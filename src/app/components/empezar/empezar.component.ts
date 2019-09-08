@@ -17,7 +17,6 @@ export class EmpezarComponent implements OnInit {
   }
 
   llenarDatos(f) {
-    console.log(f.value);
     const data = f.value;
     if (!data.nombre || !data.edad)
     {
