@@ -10,8 +10,7 @@ import { Observable } from 'rxjs';
 
 export class CategoriasService {
 
-  constructor(
-    private http: HttpClient) {
+  constructor(private http: HttpClient) {
    }
 
   getCategorias() : Observable<any>{

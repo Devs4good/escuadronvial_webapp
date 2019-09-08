@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class EmpezarComponent implements OnInit {
   nombre = '';
-  error = '';
+  error = false;
   edad ='';
   constructor(private router: Router) { }
 
@@ -17,13 +17,13 @@ export class EmpezarComponent implements OnInit {
   }
 
   llenarDatos(f) {
-    console.log(f.value);
     const data = f.value;
-    if (!data.nombre && !data.edad)
+    if (!data.nombre || !data.edad)
     {
-      this.error = "Debes indicar tu nombre y Edad"
+      this.error = true;
     } 
     else {
+      this.error = false;
       this.router.navigate(["/categorias"]);
     }
     
