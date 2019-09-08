@@ -1,0 +1,23 @@
+<div class="container-sugerencias">
+  <span class="titulo" id="titulo">Empecemos a Jugar</span>
+  {{f.nombre}}
+  <div class="descripcion">
+      <span>Dejanos tus datos para tener un registro </span> <br>
+      <span></span> 
+  </div>
+  <form #f="ngForm" (ngSubmit)="llenarDatos(f)" novalidate>
+    <div class="inputs">
+        <input name="nombre" ngModel required #nombre="ngModel" placeholder="Nombre" class="form-control">
+        <input name="edad" ngModel  class="form-control" placeholder="Edad">
+        <span class="error text-center" style="margin: 5px" >{{error}}</span>
+    </div>
+    <br/>
+    <div>
+        <button class="button button-empezar" id="button-empezar">
+            Empezar a Jugar
+          </button>
+    </div>
+   
+  </form>
+ 
+</div>
