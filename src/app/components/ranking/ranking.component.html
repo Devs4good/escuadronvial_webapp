@@ -1,19 +1,24 @@
 <div class="container-ranking">
   <span class="text-header" id="titulo">Ranking</span>
 
-  <div class="best-score">
-      #1 349878
-  </div>
-
   <div class="ranking">
       <table>
           <th>Posición</th>
           <th>Nombre</th>
           <th>Puntaje</th>
 
+          <tr class="round-border">
+              <td>#1</td>
+              <td>{{primero.nombre}}</td>
+              <td>{{primero.puntaje}}</td>
+          </tr>
+
+          <tr>
+              <td> <br></td>
+          </tr>
+
           <tr *ngFor="let posicion of puntajes; let i = index"
-              [ngStyle]="{'color':i%2 === 1 ? '#0093ba' : '#707070',
-                          'font-weight': i%2 === 1 ? 700 : 400}">
+              [ngStyle]="{'font-weight': i%2 === 1 ? 700 : 400}">
               <td>{{posicion.posicion}}</td>
               <td>{{posicion.nombre}}</td>
               <td>{{posicion.puntaje}}</td>
@@ -22,10 +27,9 @@
   </div>
   
   <div class="text-info">
-      <span id="respuestas" class="bold">Mis respuestas</span> <br>
+      <span id="respuestas" class="bold">Mis respuestas</span> <br> <br> <br>
       <div class="button" id="boton-siguiente" (click)="goPregunta()"> 
-          <a href="/pregunta" style="color:white">Volver a jugar</a>
+          <a href="/pregunta" style="color:#ffc400;font-weight:700; font-family:'Fredoka One'">Volver a jugar</a>
         </div> <br>
-      <a href="/reporte"><span id="sugerencia">Sugerencias</span> </a><br>
   </div>
 </div>
