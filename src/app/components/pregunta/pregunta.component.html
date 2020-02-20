@@ -7,8 +7,10 @@
 
 <div class="container" *ngIf="!respondido">
   <div class="pregunta mt-2">
-      <img src="../../../assets/images/pregunta.png" class="img-fluid" alt="">
-      <p class="txt-pregunta text-center" id="pregunta">{{preguntaActual?.pregunta}}</p>
+    <img src="../../../assets/images/pregunta.png" class="img-fluid" alt="">
+    <div class="alert alert-success txt-pregunta text-center" role="alert">
+      <p id="pregunta ">{{preguntaActual?.pregunta}}</p>
+    </div>
   </div>
   <span class="text-muted span-correcto">Selecciona la correcta</span>
 
